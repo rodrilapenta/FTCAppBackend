@@ -93,6 +93,6 @@ const PORT = process.env.PORT || 3000;
 
 var server = app.listen(PORT, function () {
 
-  console.log("Servidor levantado en https://pruebabackend2018.herokuapp.com:%s", host, PORT)
+  console.log("Servidor levantado en https://pruebabackend2018.herokuapp.com:%s", PORT)
 
 })
