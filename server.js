@@ -91,8 +91,6 @@ app.put('/age/:age', function (req, res) {
 
 var server = app.listen(PORT, function () {
 
-  var host = server.address().address
-
   console.log("Servidor levantado en https://pruebabackend2018.herokuapp.com:%s", host, PORT)
 
 })
