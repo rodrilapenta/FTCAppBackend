@@ -89,7 +89,7 @@ app.put('/age/:age', function (req, res) {
 
 })
 
-const PORT = process.env.PORT | 3000;
+const PORT = process.env.PORT || 3000;
 
 var server = app.listen(PORT, function () {
 
