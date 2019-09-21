@@ -1,8 +1,8 @@
 FROM node:8.15.0 AS build-env
-ADD . /app
+COPY . /app
 WORKDIR /app
 
-FROM gcr.io/distroless/nodejs
+FROM gcr.io/distroless/nodejs:latest
 COPY --from=build-env /app /app
 WORKDIR /app
 CMD ["server.js"]
